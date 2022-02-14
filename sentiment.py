@@ -35,11 +35,11 @@ def custom_tokenize(text):
 # apply the 'custom_tokenize' function
 data_trim['tokenized'] = data_trim.description.apply(custom_tokenize)
 
-# add a part-of-speech tag to the tokenized data
-data_trim['pos'] = data_trim.tokenized.apply(nltk.tag.pos_tag)
 
 # lemmatize the data 
 def lemmatize_sentence(tokens):
+    # add a part-of-speech tag to the tokenized data
+    data_trim['pos'] = data_trim.tokenized.apply(nltk.tag.pos_tag)
     lemmatizer = nltk.stem.wordnet.WordNetLemmatizer()
     lemmatized_sentence = []
     for word, tag in tokens:
