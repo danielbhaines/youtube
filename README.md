@@ -1,6 +1,9 @@
 Youtube Classification with Zero-Shot Analysis
 ================
 
+- [Required Packages](#required-packages)
+
+
 # Required packages
 ```python
 import numpy as np
@@ -14,4 +17,3 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from transformers import pipeline
 ```
 
-# youtube classification project
