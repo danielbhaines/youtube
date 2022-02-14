@@ -131,7 +131,7 @@ lemma, 'build'. It takes on a single argument:
 
 Here, we present the results of the ZS data pipeline applied to YouTube keywords ‘QAnon’, ‘Gravitational Waves’, ‘Vaccine Microchip’, ‘Coronavirus Mask’, ‘5G’, and ‘Bill Gates’.  We classified the resulting videos as either ‘science’ or ‘conspiracy theory’ based on the videos’ long description. On the left in Figure 1, we have a histogram of the predicted probabilities for the videos resulting from the QAnon search. The mass to the right of the vertical line represents the proportion of videos classified as conspiracy theory.
 
-
+![](README_files/Figure1.png)<!-- -->
 Figure 1. The predicted probability of videos from the ‘Q-Anon’ and ‘Gravitational Waves’ searches classified as conspiracy theory.
                                      
 For the QAnon search 83.7% (489/584) of the videos were classified as conspiracy theory, and the rest as science. The histogram on the right represents the same information for the gravitational waves search. In this case, only 1.2% (7/576) of the videos were classified as conspiracy theory. These two topics had the most skewed distributions of all the topics searched.
