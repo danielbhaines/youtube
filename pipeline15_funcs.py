@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Mar 10 10:41:55 2021
-@author: jlfabish
+@author: dhaines
 """
 import numpy as np
 import os
