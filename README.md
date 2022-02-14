@@ -4,7 +4,10 @@ Youtube Classification with Zero-Shot Analysis
 - [Introduction](#introduction)
 - [Required Packages](#required-packages)
 - [Importing Data from YoutubeAPI](#importing-data-from-youtubeapi)
-  - [Make_CSV() Function](#make\_csv-function) 
+  - [Make_CSV() Function](#make\_csv-function)
+  - [Get_CC() Function](#get\_cc-function)
+  - [Get_LongDesc() Function](#get\_longdesc-function) 
+- [Fitting the Model](#fitting-the-model)
 - [Cleaning the Video Data](#cleaning-the-video-data)
 - [Frequency and Sentiment Analysis](#frequency-and-sentiment-analysis)
 
@@ -47,6 +50,34 @@ CSV file. It takes on two arguments:
   - `youtube_api_key`: Must be passed as a string. See 
     https://developers.google.com/youtube/v3/quickstart/python for instructions 
     on obtaining an API key.
+
+## Get_CC() function
+```python
+get_cc(my_keyword)
+```
+
+The `Get_CC` function takes the outputted CSV from the `Make_CSV()` function 
+and uses it to pass a list of `VideoID`'s and obtain their closed-captioning 
+information from the YoutubeTranscriptAPI. It takes on a single argument:
+
+  - `my_keyword`: Must be passed as a string. This is the same keyword that was 
+    used to produce the CSV in `Make_CSV`. It is used to point the function to the 
+    CSV file created by that function. 
+
+## Get_LongDesc function
+```python
+get_longdesc(my_keyword)
+```
+
+The `Get_LongDesc` function takes the outputted CSV from `Make_CSV()` function and 
+uses it to pass a list of `VideoID`'s and obtain their long description information 
+from the YoutubeAPI. It takes on a single argument:
+
+  - `my_keyword`: Must be passed as a string. This is the same keyword that was 
+    used to produce the CSV in `Make_CSV`. It is used to point the function to the 
+    CSV file created by that function. 
+
+# Fitting the Model
 
 # Cleaning the Video Data
 
