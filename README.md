@@ -130,7 +130,8 @@ lemma, 'build'. It takes on a single argument:
 # Results
 
 Here, we present the results of the ZS data pipeline applied to YouTube keywords ‘QAnon’, ‘Gravitational Waves’, ‘Vaccine Microchip’, ‘Coronavirus Mask’, ‘5G’, and ‘Bill Gates’.  We classified the resulting videos as either ‘science’ or ‘conspiracy theory’ based on the videos’ long description. On the left in Figure 1, we have a histogram of the predicted probabilities for the videos resulting from the QAnon search. The mass to the right of the vertical line represents the proportion of videos classified as conspiracy theory.
-                                              
+
+
 Figure 1. The predicted probability of videos from the ‘Q-Anon’ and ‘Gravitational Waves’ searches classified as conspiracy theory.
                                      
 For the QAnon search 83.7% (489/584) of the videos were classified as conspiracy theory, and the rest as science. The histogram on the right represents the same information for the gravitational waves search. In this case, only 1.2% (7/576) of the videos were classified as conspiracy theory. These two topics had the most skewed distributions of all the topics searched.
@@ -187,11 +188,16 @@ Looking forward, these preliminary results using zero-shot learning, frequency a
 # References
 
 Muth. J, Hickey J., Sui R., Wang Y., E. David (2020). YouTube Search Results Project
+
 Yin, Wenpeng et al. “Benchmarking Zero-shot Text Classification: Datasets, Evaluation and Entailment Approach.” ArXiv abs/1909.00161 (2019): n. pag.
+
 Depoix, J. (2020). Youtube-transcript-api. GitHub Repository. https://github.com/jdepoix/youtube-transcript-api 
+
 Wolf, T., Debut, L., Sanh, V., Chaumond, J., Delangue, C., Moi, A., Cistac, P., Rault, T., Louf, R., Funtowicz, M., Davison, J., Shleifer, S., von Platen, P., Ma, C., Jernite, Y., Plu, J., Xu, C., Le Scao, T., Gugger, S., Drame, M., Lhoest, Q., & Rush. A.. (2020). HuggingFace's Transformers: State-of-the-art Natural Language Processing. 
+
 Abadi, M., Barham, P., Chen, J., Chen, Z., Davis, A., Dean, J., Devin, M., Ghemawat, S., Irving, G., Isard, M. & others (2016). TensorFlow: A System for Large-Scale Machine Learning.. OSDI (p./pp. 265--283). 
+
 Davidson, J. (2020) Zero-shot Learning in Modern NLP.
     https://joeddav.github.io/blog/2020/05/29/ZSL.html
-Smetanin, S. (2018). Google News and Leo Tolstoy: Visualizing Word2Vec Word Embeddings using t-SNE. https://towardsdatascience.com/google-news-and-leo-tolstoy-visualizing-word2vec-word-embeddings-with-t-sne-11558d8bd4d
 
+Smetanin, S. (2018). Google News and Leo Tolstoy: Visualizing Word2Vec Word Embeddings using t-SNE. https://towardsdatascience.com/google-news-and-leo-tolstoy-visualizing-word2vec-word-embeddings-with-t-sne-11558d8bd4d
