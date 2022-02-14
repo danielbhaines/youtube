@@ -21,7 +21,7 @@ from transformers import pipeline
 #The code and function below retrieve the videos from YouTube    
 #=============================================================================
 
-def make_csv(my_keyword):    
+def make_csv(my_keyword, youtube_api_key):    
         
     base = "https://www.googleapis.com/youtube/v3/search?"
     #fields = "&part=snippet&channelId="
@@ -158,7 +158,7 @@ youtube_api_key = "AIza-------------------------------rDQ9Q"
 
 ## execute intial funtion to get initial yt data
 my_keyword='vaccine microchip' 
-make_csv(my_keyword)
+make_csv(my_keyword, youtube_api_key)
 
 ##retrieve cc and long description data
 
