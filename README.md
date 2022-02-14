@@ -137,36 +137,53 @@ Here, we present the results of the ZS data pipeline applied to YouTube keywords
                                      
 For the QAnon search 83.7% (489/584) of the videos were classified as conspiracy theory, and the rest as science. The histogram on the right represents the same information for the gravitational waves search. In this case, only 1.2% (7/576) of the videos were classified as conspiracy theory. These two topics had the most skewed distributions of all the topics searched.
 
-Figure 2. The predicted probability of videos from the ‘Vaccine Microchip’ and ‘Coronavirus Mask’ searches classified as conspiracy theory.
+![](README_files/Figure2.png)<!-- -->
+
+*Figure 2. The predicted probability of videos from the ‘Vaccine Microchip’ and ‘Coronavirus Mask’ searches classified as conspiracy theory.*
 
 For the vaccine microchip search, 22.2% (122/550) videos and 13.6% (82/603) of the coronavirus mask searches resulted in a classification of conspiracy theory. Figure 2 visualizes this information.
 
-Figure 3. The predicted probability of videos from the ‘5G’ and ‘Bill Gates’ searches classified as conspiracy theory.
+![](README_files/Figure3.png)<!-- -->
+
+*Figure 3. The predicted probability of videos from the ‘5G’ and ‘Bill Gates’ searches classified as conspiracy theory.*
 
 As seen in Figure 3, the 5G and Bill Gates searches resulted in 28.4% (161/567) and 40.0% (218/574) of videos classified as conspiracy theory. 
 
-Figure 4. The ten most common words from each classification group for the search ‘Bill Gates’.
+![](README_files/Figure4.png)<!-- -->
+
+*Figure 4. The ten most common words from each classification group for the search ‘Bill Gates’.*
 
 In Figure 4, we see the 10 most common words from each classification group for the search term ‘Bill Gates’. The four plots are split based on how the videos were classified: transcript, title, short description, or long description. The black bar represents the top ten words from the ‘conspiracy’ classification and the red bar represents the top ten words from the ‘science’ classification.
 
-Figure 5. The ten most common words from each classification group for the search ‘Gravitational Waves’.
+![](README_files/Figure5.png)<!-- -->
+
+*Figure 5. The ten most common words from each classification group for the search ‘Gravitational Waves’.*
 
 In Figure 5, we see the 10 most common words from each classification group for the search term ‘gravitational waves’. The four plots are split based on how the videos were classified: transcript, title, short description, or long description. The black bar represents the top ten words from the ‘conspiracy’ classification and the red bar represents the top ten words from the ‘science’ classification.
 
-Figure 6. The ten most common words from each classification group for the search ‘5G’.
+![](README_files/Figure6.png)<!-- -->
+
+*Figure 6. The ten most common words from each classification group for the search ‘5G’.*
 
 In Figure 6, we see the 10 most common words from each classification group for the search term ‘5G’. The four plots are split based on how the videos were classified: transcript, title, short description, or long description. The black bar represents the top ten words from the ‘conspiracy’ classification and the red bar represents the top ten words from the ‘science’ classification.
 
-Figure 7. The ten most common words from each classification group for the search ‘Q-Anon’.
+![](README_files/Figure7.png)<!-- -->
+
+*Figure 7. The ten most common words from each classification group for the search ‘Q-Anon’.*
+
 In Figure 7, we see the 10 most common words from each classification group for the search term ‘Q-Anon’. The four plots are split based on how the videos were classified: transcript, title, short description, or long description. The black bar represents the top ten words from the ‘conspiracy’ classification and the red bar represents the top ten words from the ‘science’ classification.
 
-Figure 8. The ten most common words from each classification group for the search ‘Vaccine Microchip’.
+![](README_files/Figure8.png)<!-- -->
+
+*Figure 8. The ten most common words from each classification group for the search ‘Vaccine Microchip’.*
 
 In Figure 8, we see the 10 most common words from each classification group for the search term ‘vaccine microchip’. The four plots are split based on how the videos were classified: transcript, title, short description, or long description. The black bar represents the top ten words from the ‘conspiracy’ classification and the red bar represents the top ten words from the ‘science’ classification.
 
 We also created plots to visualize the separability of the long description text of videos that were classified as science and conspiracy theory by the ZSL algorithm. To achieve this, after classifying the videos, we concatenated the predicted labels to our original dataset and then split the dataset based on these classifications. From here, we computed the Word2Vec embeddings of the long description data for each of these two datasets, one corresponding to science predictions and the other to conspiracy theory predictions. In these Word2Vec embeddings, each word is encoded as a vector of length 300. For plotting, we reduced the dimensionality of these to 3 dimensions. This plotting technique is known as t-SNE, t-distributed stochastic neighbor embedding. The code to perform this method was acquired from a blog post by Sergey Smetanin on towardsdatascience.comG. Though visually interesting, the plots are not highly interpretable and were similar for each topic. For this reason, only a sample of the plots is included here. The results are given in Figure 9.
 
-Figure 9. t-SNE plots of classification results for Bill Gates, Gravitational Waves, Vaccine Microchip, and Coronavirus mask. The word embeddings represented by red dots correspond to text from the long descriptions of videos classified as science and blue from those classified as conspiracy theory.
+![](README_files/Figure9.png)<!-- -->
+
+*Figure 9. t-SNE plots of classification results for Bill Gates, Gravitational Waves, Vaccine Microchip, and Coronavirus mask. The word embeddings represented by red dots correspond to text from the long descriptions of videos classified as science and blue from those classified as conspiracy theory.*
 
 # Discussion
 
