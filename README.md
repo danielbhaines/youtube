@@ -8,6 +8,7 @@ Youtube Classification with Zero-Shot Analysis
   - [Get_CC() Function](#get\_cc-function)
   - [Get_LongDesc() Function](#get\_longdesc-function) 
 - [Fitting the Model](#fitting-the-model)
+  - [ZS_Classify() Function](#zs\_classify-function)
 - [Cleaning the Video Data](#cleaning-the-video-data)
 - [Frequency and Sentiment Analysis](#frequency-and-sentiment-analysis)
 
@@ -64,7 +65,7 @@ information from the YoutubeTranscriptAPI. It takes on a single argument:
     used to produce the CSV in `Make_CSV`. It is used to point the function to the 
     CSV file created by that function. 
 
-## Get_LongDesc function
+## Get_LongDesc() function
 ```python
 get_longdesc(my_keyword)
 ```
@@ -78,6 +79,21 @@ from the YoutubeAPI. It takes on a single argument:
     CSV file created by that function. 
 
 # Fitting the Model
+
+## ZS_Classify() function
+```python
+zs_classify(textVec, candidate_labels)
+```
+
+The `zs_classify` function takes a column of data from a pandas dataframe and 
+candidate labels for classification and fits the data to a zero-shot model. It 
+takes on two arguments:
+
+  - `textVec`: Takes on a column from the pandas dataframe created from data 
+    retrieved during the `Make_CSV()` data pull (ex. `df['LongDescription']`). 
+  - `candidate_labels`: Takes on a sorted list of potential candidate labels. 
+    In our case, to classify to 'science' or 'conspiracy', we would pass 
+    `['science','conspiracy']`.
 
 # Cleaning the Video Data
 
