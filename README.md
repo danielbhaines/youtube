@@ -4,7 +4,7 @@ Youtube Classification with Zero-Shot Analysis
 - [Introduction](#introduction)
 - [Required Packages](#required-packages)
 - [Importing Data from YoutubeAPI](#importing-data-from-youtubeapi)
-  - [Make_CSV() Function](#makecsv-function) 
+  - [Make_CSV() Function](#make\_csv-function) 
 - [Cleaning the Video Data](#cleaning-the-video-data)
 - [Frequency and Sentiment Analysis](#frequency-and-sentiment-analysis)
 
