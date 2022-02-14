@@ -32,6 +32,7 @@ import json
 import requests
 import re
 import pandas
+import nltk
 from youtube_transcript_api import YouTubeTranscriptApi
 from transformers import pipeline
 ```
@@ -97,4 +98,30 @@ takes on two arguments:
 
 # Cleaning the Video Data
 
-# Frequency and Sentiment Analysis
+## Custom_Tokenize() function
+```python
+custom_tokenize(text)
+```
+
+The `custom_tokenize` function is a wrapper for the `word_tokenize()` function 
+from the `NLTK` library that first changes `NA` values to blank strings before 
+tokenizing the rows of the dataframe. It takes on a single argument:
+
+  - `text`: Takes on a column from a pandas dataframe consisting of information 
+    relating to a particular `VideoID` (ex. keywords, long description, etc.).
+
+## Lemmatize_Sentence() function
+```python
+lemmatize_sentence(tokens)
+```
+The `lemmatize_sentence` function first adds a part-of-speech tag. It then takes 
+the tokenized words (output from `custom_tokenize()`) and their associated parts 
+of speech and applies the `lemmatize()` function from `NLTK`. This reduces different 
+forms of a word to its lemma for better frequency analysis. For example, 'built', 
+'building', and 'builds', when all categorized as verbs will be changed to their 
+lemma, 'build'. It takes on a single argument:
+
+  - `tokens`: Takes on the pandas dataframe column of tokenized words outputted by 
+    the `custom_tokenize()` function.
+
+
